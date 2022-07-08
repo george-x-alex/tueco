@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TUECO</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow headerMain">
+      <div class="container">
+        <h5 class="my-0 mr-md-auto font-weight-normal">
+          <img id="mainLogo" src="images/logo.png">
+        </h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="whiteBG">
+        <div class="colouredCircle orange">&nbsp;</div>
+        <h4 class=" ">Prenotazione navetta - San Teodoro Beach Bus</h4>
+        <p class="mb-4 descriptionP">È possibile effettuare prenotazioni fino alle ore 20 del giorno precedente. Se vuoi prenotare in una data diversa da quelle consentite, contattaci per richiedere un servizio personalizzato.</p>
+        <hr class="mb-4">
+        <form class="needs-validation mt-5" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control form-control-group" id="" placeholder="Data di partenza" required>
+                <div class="invalid-feedback" style="width: 100%;"> Required. </div>
+              </div>
+            </div>
+            <div class="col-md-6" style="height: 1px;">&nbsp; </div>
+            <div class="col-md-6 mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control form-control-group" id="" placeholder="Scegli partenza" required>
+                <div class="invalid-feedback" style="width: 100%;"> Required. </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-map-marker"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control form-control-group" id="" placeholder="Scegli destinazione" required>
+                <div class="invalid-feedback" style="width: 100%;"> Required. </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3 mt-4">
+              <h4 class=" ">Passeggeri</h4>
+            </div>
+            <div class="col-md-4 mb-3 spinner-inputs">
+              <label for="adults">
+                <i class="fa fa-user"></i>&nbsp; Adulti </label>
+              <input class="bootstrap-numbers form-control" name="participants" id="adults" type="number" value="1" min="1" />
+            </div>
+            <div class="col-md-4 mb-3 spinner-inputs">
+              <label for="kids-10">
+                <i class="fa fa-user"></i>&nbsp; Bambini &lt;10 anni </label>
+              <input class="bootstrap-numbers form-control" name="participants" id="kids-10" type="number" value="0" min="0" />
+            </div>
+            <div class="col-md-4 mb-3 spinner-inputs">
+              <label for="kids-3">
+                <i class="fa fa-user"></i>&nbsp; Bambini &lt;3 anni </label>
+              <input class="bootstrap-numbers form-control" name="participants" id="kids-3" type="number" value="0" min="0" />
+            </div>
+            <div class="col-md-12 mt-3">
+              <button class="btn btn-primary btn-lg btn-block disabled-grey" disabled style="max-width: 220px;" type="submit">Vedi orari disponibili</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write(' < script src = "assets/js/vendor/jquery-slim.min.js" > < \/script>')
+    </script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="js/bootstrap-number-input.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+    <script>
+      $('.bootstrap-numbers').bootstrapNumber();
+    </script>
+  </body>
+</html>
